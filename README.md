@@ -16,13 +16,3 @@ A structured engineering lab, architecture notebook, and script repository docum
 
 ---
 
-## Repository Structure
-
-```text
-servicenow-learning-lab/
-├── 01-csa-platform-fundamentals/   # Data model, ACLs, CMDB, Update Sets, Flow Designer
-├── 02-cad-app-development/         # Client/Server scripting, Glide APIs, Script Includes, REST
-├── 03-cis-csm-implementation/      # CSM data model, Case management, AWA, Portals
-├── scripts-background/             # Runnable server-side JS snippets & SQL debug labs
-├── api-payloads/                   # Table API, Scripted REST, and cURL/Postman collections
-└── notes/                          # Architecture deep dives & exam vs. production gotchas
