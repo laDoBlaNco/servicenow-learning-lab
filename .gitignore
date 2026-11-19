@@ -1,0 +1,50 @@
+---
+
+### `.gitignore`
+
+This covers Node.js / ServiceNow SDK (`@servicenow/sdk`) artifacts, VS Code workspace clutter, OS files, and—most importantly—credential files so you never accidentally push PDI passwords, OAuth tokens, or API keys.
+
+```gitignore
+# Environment variables & ServiceNow credentials
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*credentials*.json
+*secrets*.json
+.now-auth*
+
+# ServiceNow SDK / Fluent build artifacts
+dist/
+target/
+.now/
+now-build/
+
+# Node.js / Package Managers
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# Logs & Exports (e.g., XML Update Set exports, CSV/Excel table dumps)
+*.log
+*.xml.bak
+exports/
+tmp/
+
+# IDE & Editor
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# OS & WSL2
+.DS_Store
+Thumbs.db
+Desktop.ini
+*:Zone.Identifier
